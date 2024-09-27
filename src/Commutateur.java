@@ -37,7 +37,7 @@ public class Commutateur {
     void setCouleur(Color c){
         this.couleur = c;
     }
-    void ajouterVoisins(Commutateur voisin, int ponderation){
+    void ajouterVoisin(Commutateur voisin, int ponderation){
         voisins.put(voisin,ponderation);
         voisin.voisins.put(this,ponderation);
     }
