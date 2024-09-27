@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-class Reseau {
+public class Reseau {
     List<Commutateur> commutateurs;
     List<Machine> machines;
 
@@ -14,15 +14,9 @@ class Reseau {
         commutateurs.add(commutateur);
     }
 
-    public void ajouterMachine(Machine machine) {
-        machines.add(machine);
-    }
-
-
-
-    // Implémentation de l'algorithme de Dijkstra pour calculer le chemin le plus court
-    // entre le commutateur source et le commutateur destination
-    // Retourne la liste des commutateurs formant le chemin le plus court
+    /* Implémentation de l'algorithme de Dijkstra pour calculer le chemin le plus court
+     * entre le commutateur source et le commutateur destination
+     * retourne la liste des commutateurs formant le chemin le plus court */
     public List<Commutateur> calculerCheminPlusCourt(Commutateur source, Commutateur destination) {
         Map<Commutateur, Integer> distance = new HashMap<>();
         Map<Commutateur, Commutateur> precedents = new HashMap<>();
