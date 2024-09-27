@@ -105,4 +105,8 @@ public class Commutateur {
 
         return tableRoutage.toString();
     }
+
+    public Map<Commutateur, Integer> getVoisins() {
+        return voisins;
+    }
 }
